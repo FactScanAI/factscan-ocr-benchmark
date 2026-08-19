@@ -1,0 +1,4 @@
+# FactScan OCR Accuracy Benchmark 2026 — no third-party dependencies.
+# The reproduction and consistency scripts use only the Python 3 standard
+# library (csv, json, math, random, re, statistics, unicodedata, collections).
+# No installation step is required beyond a standard CPython 3.8+ interpreter.

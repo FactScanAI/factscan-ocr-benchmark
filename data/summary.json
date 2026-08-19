@@ -1,0 +1,62 @@
+{
+  "title": "OCR Accuracy Benchmark 2026: How Blur and Image Resolution Affect OCR Accuracy",
+  "publisher": "FactScan AI",
+  "study_version": "1.0",
+  "published": "2026-08-18",
+  "canonical": "https://factscanai.app/research/ocr-accuracy-benchmark",
+  "scope": {
+    "documents": 60,
+    "ocr_executions": 900,
+    "languages": [
+      "en",
+      "cs"
+    ],
+    "categories": {
+      "prose": 15,
+      "table": 15,
+      "invoice": 15,
+      "mixed": 15
+    },
+    "language_split": {
+      "en": 36,
+      "cs": 24
+    },
+    "ocr_path": "Google Vision TEXT_DETECTION, no language hint, no fallback, no AI cleanup",
+    "ground_truth": "exact by construction (synthetic render of a known string)",
+    "study_type": "API-level, synthetic documents; not an end-to-end camera/app benchmark"
+  },
+  "definitions": {
+    "cer": "strict character error rate",
+    "wer": "strict word error rate",
+    "near_exact": "CER <= 0.02",
+    "document_failure": "CER > 0.30",
+    "empty_failure": "successful response with no recognized text, scored CER 1.0",
+    "silent_nonempty_failure": "successful response with non-empty text and CER > 0.30",
+    "content_f1": "order-tolerant token-multiset F1 for structured documents"
+  },
+  "headline_findings": [
+    "Median CER stayed at or below 0.005 through 3.0 px Gaussian blur, rose to 0.157 at 4.0 px and 0.830 at 5.0 px; document failure rate rose from 8.3% to 36.7% to 75.0%.",
+    "The resolution knee sits between 18% and 16% of original linear scale: median CER 0.094 to 0.280, failure rate 20.0% [11.8, 31.8] to 46.7% [34.6, 59.1].",
+    "Across every condition a user would plausibly submit, 90-100% of failures returned non-empty but materially inaccurate text; empty responses only dominated below 12% scale (51.7% of variants empty at 10%).",
+    "Relative scale predicted first-failure more consistently than total pixels (coefficient of variation 0.245 vs 0.598).",
+    "At clean baseline, 3 of 3 structured-document failures by strict CER were reading-order differences with content F1 1.000.",
+    "Czech median CER exceeded English at all 15 conditions, with the gap concentrated around the degradation knee (blur 4.0: 0.285 vs 0.055; res 16%: 0.540 vs 0.183) and negligible at clean baseline."
+  ],
+  "not_established": [
+    "No universal absolute variance-of-Laplacian sharpness threshold (best Youden J 0.505, heavy distribution overlap).",
+    "No claim about provider confidence, real photographs, handwriting, non-Latin scripts or cross-provider comparison."
+  ],
+  "files": [
+    "methodology.md",
+    "dataset-manifest.json",
+    "condition-aggregates.json",
+    "failure-modes.json",
+    "baseline-gate.json",
+    "paired-deltas.csv",
+    "per-variant.csv",
+    "resolution-manifest.json",
+    "sharpness-metrics.json",
+    "outliers.json",
+    "summary.json"
+  ]
+}

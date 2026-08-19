@@ -1,0 +1,188 @@
+{
+  "baseline": [
+    {
+      "doc_id": "table_en_05",
+      "kind": "table",
+      "lang": "en",
+      "condition": "baseline",
+      "cer": 0.6278,
+      "content_f1": 1.0,
+      "empty_failure": 0,
+      "silent_failure": 1,
+      "sharpness_ratio": 1.0,
+      "rel_scale": 1.0
+    },
+    {
+      "doc_id": "invoice_cs_03",
+      "kind": "invoice",
+      "lang": "cs",
+      "condition": "baseline",
+      "cer": 0.447,
+      "content_f1": 1.0,
+      "empty_failure": 0,
+      "silent_failure": 1,
+      "sharpness_ratio": 1.0,
+      "rel_scale": 1.0
+    },
+    {
+      "doc_id": "table_cs_03",
+      "kind": "table",
+      "lang": "cs",
+      "condition": "baseline",
+      "cer": 0.3048,
+      "content_f1": 1.0,
+      "empty_failure": 0,
+      "silent_failure": 1,
+      "sharpness_ratio": 1.0,
+      "rel_scale": 1.0
+    },
+    {
+      "doc_id": "invoice_cs_01",
+      "kind": "invoice",
+      "lang": "cs",
+      "condition": "baseline",
+      "cer": 0.2443,
+      "content_f1": 1.0,
+      "empty_failure": 0,
+      "silent_failure": 0,
+      "sharpness_ratio": 1.0,
+      "rel_scale": 1.0
+    },
+    {
+      "doc_id": "mixed_cs_02",
+      "kind": "mixed",
+      "lang": "cs",
+      "condition": "baseline",
+      "cer": 0.2419,
+      "content_f1": 1.0,
+      "empty_failure": 0,
+      "silent_failure": 0,
+      "sharpness_ratio": 1.0,
+      "rel_scale": 1.0
+    }
+  ],
+  "blur": [
+    {
+      "doc_id": "prose_cs_03",
+      "kind": "prose",
+      "lang": "cs",
+      "condition": "blur_4_5",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 0,
+      "silent_failure": 1,
+      "sharpness_ratio": 0.000174,
+      "rel_scale": null
+    },
+    {
+      "doc_id": "prose_cs_05",
+      "kind": "prose",
+      "lang": "cs",
+      "condition": "blur_4_5",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.000215,
+      "rel_scale": null
+    },
+    {
+      "doc_id": "mixed_cs_04",
+      "kind": "mixed",
+      "lang": "cs",
+      "condition": "blur_5_0",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.000194,
+      "rel_scale": null
+    },
+    {
+      "doc_id": "mixed_cs_05",
+      "kind": "mixed",
+      "lang": "cs",
+      "condition": "blur_5_0",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.000209,
+      "rel_scale": null
+    },
+    {
+      "doc_id": "mixed_en_01",
+      "kind": "mixed",
+      "lang": "en",
+      "condition": "blur_5_0",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.00016,
+      "rel_scale": null
+    }
+  ],
+  "res": [
+    {
+      "doc_id": "mixed_cs_05",
+      "kind": "mixed",
+      "lang": "cs",
+      "condition": "res_15",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.905511,
+      "rel_scale": 0.15
+    },
+    {
+      "doc_id": "mixed_cs_04",
+      "kind": "mixed",
+      "lang": "cs",
+      "condition": "res_14",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 0,
+      "silent_failure": 1,
+      "sharpness_ratio": 0.727801,
+      "rel_scale": 0.14
+    },
+    {
+      "doc_id": "mixed_en_05",
+      "kind": "mixed",
+      "lang": "en",
+      "condition": "res_14",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.520316,
+      "rel_scale": 0.14
+    },
+    {
+      "doc_id": "prose_cs_03",
+      "kind": "prose",
+      "lang": "cs",
+      "condition": "res_14",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.487251,
+      "rel_scale": 0.14
+    },
+    {
+      "doc_id": "prose_cs_05",
+      "kind": "prose",
+      "lang": "cs",
+      "condition": "res_14",
+      "cer": 1.0,
+      "content_f1": 0.0,
+      "empty_failure": 1,
+      "silent_failure": 0,
+      "sharpness_ratio": 0.610551,
+      "rel_scale": 0.14
+    }
+  ]
+}

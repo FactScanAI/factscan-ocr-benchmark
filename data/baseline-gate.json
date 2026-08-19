@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "n": 60,
+    "mean": 0.0668,
+    "median": 0.0,
+    "p25": 0.0,
+    "p75": 0.1063,
+    "min": 0.0,
+    "max": 0.6278,
+    "wer_median": 0.0,
+    "exact": 33,
+    "near_exact": 37,
+    "failures": 3,
+    "failure_rate": 0.05,
+    "failure_rate_ci95": [
+      0.0171,
+      0.137
+    ],
+    "empty_failures": 0,
+    "empty_failure_rate": 0.0,
+    "empty_failure_rate_ci95": [
+      -0.0,
+      0.0602
+    ],
+    "silent_failures": 3,
+    "silent_failure_rate": 0.05,
+    "silent_failure_rate_ci95": [
+      0.0171,
+      0.137
+    ],
+    "median_paired_delta_cer": 0.0,
+    "median_paired_delta_cer_ci95_bootstrap": [
+      0.0,
+      0.0
+    ],
+    "content_f1_median": 1.0,
+    "reading_order_gap_median": 0.9787
+  },
+  "failures_over_0_30": [
+    {
+      "doc_id": "table_en_05",
+      "kind": "table",
+      "lang": "en",
+      "cer": 0.6278,
+      "content_f1": 1.0,
+      "content_recall": 1.0,
+      "cause": "reading-order artifact (content F1 >= 0.85)"
+    },
+    {
+      "doc_id": "invoice_cs_03",
+      "kind": "invoice",
+      "lang": "cs",
+      "cer": 0.447,
+      "content_f1": 1.0,
+      "content_recall": 1.0,
+      "cause": "reading-order artifact (content F1 >= 0.85)"
+    },
+    {
+      "doc_id": "table_cs_03",
+      "kind": "table",
+      "lang": "cs",
+      "cer": 0.3048,
+      "content_f1": 1.0,
+      "content_recall": 1.0,
+      "cause": "reading-order artifact (content F1 >= 0.85)"
+    }
+  ],
+  "structured_content_f1_median": 1.0
+}
